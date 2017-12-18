@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "132775993341",
+    "firebase_url": "https://trabalhoprogi.firebaseio.com",
+    "project_id": "trabalhoprogi",
+    "storage_bucket": "trabalhoprogi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:132775993341:android:8351e60889255b30",
+        "android_client_info": {
+          "package_name": "br.com.claiton.trabalho_prog_i"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "132775993341-to2joot4mjfofdaes21b2hnqd6bo4gc8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.claiton.trabalho_prog_i",
+            "certificate_hash": "7e30cd24662849c0a73bafe67f3e6fd1d86909be"
+          }
+        },
+        {
+          "client_id": "132775993341-ssg36sulb6kuffshis6h5m48vg9gugl0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADJVA9snkdqhIkfAzTq65F4qOubJSNhfI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "132775993341-ssg36sulb6kuffshis6h5m48vg9gugl0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2e3237"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <EditText
+            android:id="@+id/nome"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_cadastro"
+            android:hint="Digite seu nome"
+            android:inputType="textCapWords"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#888888"
+            android:textColorHint="#5e6266" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#3b4148"
+            android:hint="Digite um email válido"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#888888"
+            android:textColorHint="#5e6266" />
+
+        <EditText
+            android:id="@+id/senha"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#3b4148"
+            android:hint="Digite uma senha"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#888888"
+            android:textColorHint="#5e6266" />
+
+        <EditText
+            android:id="@+id/confirma_senha"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="#3b4148"
+            android:hint="Confirmar senha"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#888888"
+            android:textColorHint="#5e6266" />
+
+        <RadioGroup
+            android:id="@+id/sexo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/fem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:onClick="escolheSexo"
+                android:text="Feminino"
+                android:textColor="#888888"
+                android:textSize="17sp" />
+
+            <RadioButton
+                android:id="@+id/mas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="escolheSexo"
+                android:text="Masculino"
+                android:textColor="#888888"
+                android:textSize="17sp" />
+        </RadioGroup>
+        <!-- Login Button -->
+
+        <Button
+            android:id="@+id/b_cadastro"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="#ea4c88"
+            android:text="registrar"
+            android:textColor="#ffffff" />
+
+        <!-- Link to Login Screen -->
+
+        <Button
+            android:id="@+id/b_para_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dip"
+            android:background="@null"
+            android:text="Ir para login"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Geral">
+
+        <EditTextPreference
+            android:key="umas parada ai"
+            android:title="preferencia"
+            android:summary="edito"
+            android:dialogTitle="dialogo" />
+
+        <ListPreference
+            android:key="list_preference"
+            android:title="lista "
+            android:summary="sumario"
+            android:entries="@array/Generos"
+            android:entryValues="@array/Generos_valores"
+            android:dialogTitle="Escolha" />
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="?colorPrimary"
+    android:padding="10dp"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/email_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:hint="Email"
+            android:textColorHint="#dddddd"
+            app:hintTextAppearance="@style/StyleHint">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionNext"
+                android:background="@drawable/edit_text_custom"
+                android:textColor="#ffffff"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/usuario_linha"
+                android:drawableStart="@drawable/usuario_linha"
+                android:drawablePadding="5dp"
+                android:textCursorDrawable="@null"
+                android:maxLines="1"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/senha_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Senha"
+            app:hintTextAppearance="@style/StyleHint"
+            android:textColorHint="#dddddd"
+            app:hintAnimationEnabled="true"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#ffffff">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:imeOptions="actionDone"
+                android:textColor="#ffffff"
+                android:drawableLeft="@drawable/chave"
+                android:drawableStart="@drawable/chave"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/edit_text_custom"
+                android:textCursorDrawable="@null"
+                android:inputType="textPassword"
+                android:maxLines="1"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/b_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="#eceef1"
+            android:onClick="login"
+            android:text="Entrar"
+            android:textColor="#26ae90" />
+
+        <Button
+            android:id="@+id/b_para_cadastro"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@null"
+            android:text="Não possui uma conta? Cadastre-se"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
